@@ -51,9 +51,7 @@ body {
     position: absolute;
     left: 30px;
     top: -170px;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .from, .to {
@@ -62,9 +60,7 @@ body {
     font-weight: bold;
     color: #781626;
     position: absolute;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg); /* для Firefox */
-    -o-transform: rotate(-45deg); /* для Opera */
+    transform: rotate(-45deg);
 }
 
 .from {
@@ -77,5 +73,62 @@ body {
     left: -100px;
 }
 
+.text {
+    position: absolute;
+    max-width: 300px;
+    width: 300px;
+    z-index: 2;
+    transform: rotate(-45deg);
+    color: #781626;
+    /*font-size: 18px;*/
+}
 
+#t1 {
+    top: -10px;
+    left: -120px;
+}
+
+#t2 {
+    top: -10px;
+    left: -80px;
+}
+
+#t3 {
+    top: 30px;
+    left: -80px;
+}
+
+#t4 {
+    left: -30px;
+    top: 20px;
+}
+
+#h1 {
+    transition: all 1s linear;
+}
+
+.open {
+    left: -700px;
+    /*opacity: 0;*/
+    transform: rotate(-70deg);
+}
+
+h2 {
+    color: #781626;
+    text-align: center;
+    margin-top: 60px;
+    -webkit-animation: blink1 1.5s linear infinite;
+    animation: blink1 1.5s linear infinite;
+}
+
+@-webkit-keyframes blink1 {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+@keyframes blink1 {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
 
