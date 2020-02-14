@@ -115,10 +115,12 @@ body {
 
 h2 {
     color: #781626;
+    position: relative;
     text-align: center;
     margin-top: 60px;
     -webkit-animation: blink1 1.5s linear infinite;
     animation: blink1 1.5s linear infinite;
+    transition: top 3s linear;
 }
 
 @-webkit-keyframes blink1 {
@@ -131,4 +133,12 @@ h2 {
     50% { opacity: 0.3; }
     100% { opacity: 1; }
 }
+
+.hide {
+    top: -100px;
+}
+
+/*.img1, .img2, .img3 {*/
+/*    max-width: 150px;*/
+/*}*/
 
